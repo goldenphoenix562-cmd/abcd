@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Poppins&display=swap');
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+
+
+body{
+
+
+height:100vh;
+
+overflow:hidden;
+
+background:
+
+linear-gradient(
+rgba(0,0,0,.55),
+rgba(20,0,30,.8)
+),
+
+url("images/background.jpg");
+
+
+background-size:cover;
+
+background-position:center;
+
+
+color:white;
+
+font-family:Poppins,sans-serif;
+
+
+}
+
+
+
+
+.screen{
+
+
+position:absolute;
+
+inset:0;
+
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+
+text-align:center;
+
+
+padding:40px;
+
+
+opacity:0;
+
+visibility:hidden;
+
+
+transition:1s;
+
+
+}
+
+
+
+
+.screen.active{
+
+
+opacity:1;
+
+visibility:visible;
+
+
+}
+
+
+
+
+
+h1{
+
+
+font-family:"Cormorant Garamond";
+
+font-size:65px;
+
+
+text-shadow:
+
+0 0 30px #ff6fae;
+
+
+}
+
+
+
+
+h2{
+
+
+color:#ffd1e6;
+
+}
+
+
+
+
+p{
+
+
+margin:20px;
+
+max-width:600px;
+
+font-size:18px;
+
+line-height:1.8;
+
+
+}
+
+
+
+
+button{
+
+
+padding:15px 50px;
+
+margin:15px;
+
+
+border-radius:40px;
+
+
+border:1px solid white;
+
+
+background:rgba(255,100,170,.25);
+
+
+color:white;
+
+
+font-size:18px;
+
+
+cursor:pointer;
+
+
+transition:.3s;
+
+
+}
+
+
+
+button:hover{
+
+
+transform:scale(1.1);
+
+background:#ff6fae;
+
+
+}
+
+
+
+
+input{
+
+
+padding:15px;
+
+width:300px;
+
+
+border-radius:30px;
+
+border:none;
+
+
+text-align:center;
+
+
+font-size:18px;
+
+
+}
+
+
+
+
+/* ---------- Video Section ---------- */
+
+#videoPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.reel-video {
+    width: 100%;
+    max-width: 360px;      /* Instagram Reel width */
+    max-height: 75vh;      /* Prevents it from becoming too tall */
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(255, 105, 180, 0.8);
+    background: #000;
+    display: block;
+}
+
+
+img {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(255, 105, 180, 0.8);
+}
+
+
+#wrong,
+#wrongName{
+
+
+display:none;
+
+color:#ff8aa8;
+
+
+}
